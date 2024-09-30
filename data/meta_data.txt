@@ -1,0 +1,159 @@
+Legend:
+- B is the magentic field strength in mT
+- F is the frequency in MHz
+- (x) notes an uncertainty of x on the last digit
+
+Additional information:
+- Measuring new B value every third measurement, or when pausing in between measurements
+- All file names end on .csv
+
+# Measuring Glycol
+
+1)
+B = 448(2)
+F = 19.4638(1)
+NewFile4
+
+2)
+F = 19.4568(1)
+NewFile5
+
+3)
+F = 19.4500(1)
+NewFile6 (-)
+
+4)
+B = 449(1)
+F = 19.4447(1)
+NewFile7 (6)
+
+5)
+F=19.4400
+NewFile8 (7)
+# Side note: NewFile6 seems to have been created twice and file 8 was named file 7
+# Conclusion: Likely file 6 was overridden by what was supposed to be file 7 and file 8 became file 7 then
+
+6)
+B = 448(1)
+F = 19.4166(1)
+NewFile8
+
+7)
+F = 19.4043(1)
+NewFile9
+
+8)
+F = 19.3982(1)
+NewFile10
+
+9)
+B = 448(1)
+F = 19.3894(1)
+NewFile11
+
+10)
+F = 19.3802(1)
+NewFile12
+
+11)
+F = 19.3749(1)
+NewFile13
+
+
+# Measuring Hydrogen
+
+1)
+B = 447(1)
+F = 19.3955(1)
+NewFile14
+
+2)
+F = 19.3900(1)
+NewFile15
+
+3) F = 19.3850(1)
+NewFile16
+
+4)
+B = 448(1)
+F = 19.3734(1)
+NewFile17
+
+5)
+F = 19.3686(1)
+NewFile18
+
+6)
+F = 19.3592(1)
+NewFile19
+
+7)
+B = 446(1)
+F = 19.3643(1)
+NewFile20
+
+8)
+F = 19.3716(1)
+NewFile21
+
+9)
+F = 19.3826(1)
+NewFile22
+
+
+# Measuring Fluorine-19
+
+1)
+B = 446(1)
+F = 17.7895(3)
+NewFile23
+
+2)
+F = 17.7835(3)
+NewFile24
+
+3)
+F = 17.7818(3)
+NewFile25
+
+4)
+B= 447(1)
+F = 17.7885(2)
+Newfile26
+
+5)
+F = 17.7752(2)
+NewFile27
+
+
+# Measuring Teflon:
+
+1)
+B = 446(1)
+F = 17.7727(2)
+Newfile28
+
+2)
+F = 17.7766(1)
+NewFile29
+
+3)
+F = 17.7813(1)
+NewFile30
+
+4)
+B = 447(1)
+F = 17.7961(3)
+NewFile31
+
+5)
+F = 17.8023(2)
+NewFile32
+
+6)
+F = 17.8126(1)
+Newfile33
+
+7)
+F = 17.7777(2)
+Newfile34
