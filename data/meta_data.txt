@@ -1,7 +1,7 @@
 Legend:
 - B is the magentic field strength in mT
 - F is the frequency in MHz
-- (x) notes an uncertainty of x on the last digit
+- (x) denotes an uncertainty of x on the last digit
 
 Additional information:
 - Measuring new B value every third measurement, or when pausing in between measurements
