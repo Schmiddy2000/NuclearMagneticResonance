@@ -1,6 +1,7 @@
 import numpy as np
-from copy import copy
 import pandas as pd
+from copy import copy
+from matplotlib import pyplot as plt
 
 from typing import Tuple
 
@@ -25,7 +26,21 @@ def get_csv_data(file_index: int, use_average: bool = False) -> Tuple[np.array, 
     return x, ch_1, ch_2
 
 
-def averager(counts_array: np.array):
+def show_basic_csv_plot(file_index: int) -> None:
+    x, ch_1, ch_2 = get_csv_data(file_index)
+
+    plt.figure(figsize=(12, 5))
+
+    plt.plot(x, ch_1, label='CH1', c='y')
+    plt.plot(x, ch_2, label='CH2', c='b')
+
+    plt.legend()
+    plt.show()
+
+    return None
+
+
+def averager(counts_array: np.array) -> np.array:
     averaged_counts_array = copy(counts_array)
     last_true_value = counts_array[0]
 
