@@ -1,6 +1,8 @@
 Legend:
 - B is the magentic field strength in mT
 - F is the frequency in MHz
+- F_2 is the frequency of the sinusoidal wave on top of the zigzag function in Hz
+- T is the periodic time of the zigzag function in seconds
 - (x) denotes an uncertainty of x on the last digit
 
 Additional information:
@@ -157,3 +159,196 @@ Newfile33
 7)
 F = 17.7777(2)
 Newfile34
+
+
+# Lock in Hydrogen
+
+B = 432
+1)
+F = 18.5702(1)
+F_2 = 27(1)
+T = 10
+NewFile35
+
+2)
+F = 18.5702(1)
+F_2 = 27(1)
+T = 100
+NewFile36
+
+3)
+F = 18.5702(1)
+F_2 = 27(1)
+T = 100
+NewFile37
+
+4)
+F = 18.5491(1)
+F_2 = 27(1)
+T = 100
+NewFile38
+
+5)
+F = 18.549(1)
+F_2 = 27(1)
+T = 300
+NewFile39
+
+B = 432
+6)
+F = 18.5417(2)
+F_2 = 27(1)
+T = 300
+NewFile40
+
+7)
+F = 18.5342(2)
+F_2 = 27(1)
+T = 300
+NewFile41
+
+8)
+F = 18.5646(1)
+F_2 = 27(1)
+T = 300
+NewFile42
+
+9)
+F = 18.5646
+F_2 = 27(1)
+T = 100
+NewFile43
+
+
+B = 436(1)
+
+10)
+F = 18.5492(1)
+F_2 = 27(1)
+T = 100
+NewFile44
+
+11)
+F = 18.5304(3)
+F_2 = 27
+T = 100
+NewFile45, NewFile46
+
+
+12)
+F = 18.5171(2)
+F_2 = 27
+T = 100
+Newfile47
+
+
+13)
+F = 18.5356(2)
+F_2 = 27
+T = 100
+NewFile48
+
+14)
+F = 18.5301(2)
+F_2 = 27
+T = 100
+NewFile49
+
+15)
+F= 18.5468(2)
+F_2 = 27
+T = 100
+NewFile50
+
+B = 435(4)
+
+16)
+F = 18.5473
+F_2 = 26
+T = 30
+NewFile51
+
+# change F_2
+
+
+17)
+F = 18.5471(2)
+F_2 = 31(2)
+T = 30
+NewFile52
+
+18)
+F = 18.5471(2)
+F_2 = 34(2)
+T = 30
+NewFile53
+
+19)
+F = 18.5471(2)
+F_2 = 38(2)
+T = 30
+NewFile54
+
+
+20)
+F = 18.5471(2)
+F_2 = 42(2)
+T = 30
+NewFile55
+
+21)
+F = 18.5471(2)
+F_2 = 51(2)
+T = 30
+NewFile56
+
+22)
+F = 18.5471(2)
+F_2 = 75(2)
+T = 30
+NewFile57
+
+
+23)
+F = 18.5471(2)
+F_2 = 22(2)
+T = 30
+NewFile58
+
+
+24)
+F = 18.5468(2) #realised now it decreased --> higher uncertainties for the ones before
+F_2 = 40(2)
+T = 30
+NewFile59
+
+
+# change F again
+
+25)
+F = 18.5544(2)
+F_2 = 40(2)
+T = 30
+NewFile60
+
+25)
+F = 18.5653(2)
+F_2 = 40(2)
+T = 30
+NewFile61
+
+26)
+F = 18.5347(2)
+F_2 = 40(2)
+T = 30
+NewFile62
+
+
+
+27)
+F = 18.5248(2)
+F_2 = 40(2)
+T = 30
+NewFile63
+
+NewFile 64: B Modulation at 18.5259MHz
