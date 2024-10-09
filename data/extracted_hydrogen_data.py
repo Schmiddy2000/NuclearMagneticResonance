@@ -1,6 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
-from tools import averager, get_csv_data, show_basic_csv_plot
+from tools import averager, get_csv_data, show_basic_csv_plot, run_parabolic_interpolation
 
 
 # Ranges from 14 to 22 for hydrogen
@@ -9,8 +9,15 @@ file_indices = np.arange(14, 23, 1)
 
 print(file_indices)
 
+
+# Get the data
+_x, _ch1, _ch2 = get_csv_data(14)
+a, d_a = run_parabolic_interpolation(_ch1, [128, 435, 740, 1048])
+print(a, d_a)
+
 # Show the plot
-# show_basic_csv_plot(file_index)
+show_basic_csv_plot(file_index)
+
 
 # Datapoints
 hydrogen_dips = np.array([[128, 435.5, 740, 1048], [128, 435.5, 740, 1048], [128, 435.5, 740, 1048],
@@ -36,6 +43,9 @@ def get_difference_array(dips_array: np.array([np.array, ...])):
 diff_arrs = get_difference_array(hydrogen_dips)
 
 plt.figure(figsize=(12, 5))
+plt.title('Distance in ')
+plt.xlabel('Dip indices used for distance measurement')
+plt.ylabel('Distance in [resolution units]')
 
 for i, d_a in enumerate(diff_arrs):
     # Scatter plot for data
@@ -66,7 +76,8 @@ for i, d_a in enumerate(diff_arrs):
     # plt.fill_between(x_fit, y_fit_lower, y_fit_upper, color='gray', alpha=0.3, label=f'1-sigma band {file_indices[i]}')
 
 plt.legend()
-plt.xlim(-0.25, 2.5)
+plt.xlim(-0.25, 2.25)
+plt.xticks([0, 1, 2], [r'$1 \rightarrow 2$', r'$2 \rightarrow 3$', r'$3 \rightarrow 4$'])
 plt.tight_layout()
 plt.show()
 

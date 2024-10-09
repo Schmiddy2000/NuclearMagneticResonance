@@ -3,7 +3,7 @@ import pandas as pd
 from copy import copy
 from matplotlib import pyplot as plt
 
-from typing import Tuple
+from typing import Tuple, List
 
 
 def get_csv_data(file_index: int, use_average: bool = False) -> Tuple[np.array, np.array, np.array]:
@@ -51,3 +51,38 @@ def averager(counts_array: np.array) -> np.array:
         last_true_value = new_last_true_value
 
     return averaged_counts_array
+
+
+def run_parabolic_interpolation(y: List[int] | np.array,
+                                position_indices: List[int] | np.array) -> Tuple[List[float], List[float]]:
+    """
+    The function expects the y-data along with a sequence of positions (indices)
+    that correspond to the local minima of each dip from one measurement.
+
+    It will then use parabolic interpolation to compute and return the best guess
+    for the real minima of the dip along with the corresponding uncertainty.
+    """
+
+    # Lists to store the obtained minima and uncertainties
+    x_min_list = []
+    delta_x_min_list = []
+
+    # Compute the resolution in y direction
+    y_diff = np.diff(y)
+    y_resolution = np.min(np.abs(y_diff[y_diff != 0]))
+    print(f'res: {y_resolution}')
+
+    for p_i in position_indices:
+        y_i_minus_one = y[p_i - 1]
+        y_i = y[p_i]
+        y_i_plus_one = y[p_i + 1]
+
+        x_min = p_i + (y_i_minus_one - y_i_plus_one) / (2 * (y_i_minus_one - 2 * y_i + y_i_plus_one))
+        x_min_list.append(x_min)
+
+        delta_x_min = (y_resolution / ((y_i_minus_one - 2 * y_i + y_i_plus_one) ** 2) *
+                       np.sqrt((y_i_minus_one - y_i_plus_one) ** 2 + (y_i - y_i_plus_one) ** 2 +
+                               (y_i - y_i_minus_one) ** 2))
+        delta_x_min_list.append(delta_x_min)
+
+    return x_min_list, delta_x_min_list
