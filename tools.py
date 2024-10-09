@@ -74,7 +74,6 @@ def run_parabolic_interpolation(y: Union[List[int], NDArray[np.int_]],
     # Compute the resolution in y direction
     y_diff = np.diff(y)
     y_resolution = np.min(np.abs(y_diff[y_diff != 0]))
-    print(f'res: {y_resolution}')
 
     for p_i in position_indices:
         y_i_minus_one = y[p_i - 1]
