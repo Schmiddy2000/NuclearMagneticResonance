@@ -3,10 +3,13 @@ import pandas as pd
 from copy import copy
 from matplotlib import pyplot as plt
 
-from typing import Tuple, List
+from typing import Tuple, List, Union
+from numpy.typing import NDArray
 
 
-def get_csv_data(file_index: int, use_average: bool = False) -> Tuple[np.array, np.array, np.array]:
+def get_csv_data(file_index: int,
+                 use_average: bool = False
+                 ) -> Tuple[NDArray[np.int_], NDArray[np.int_], NDArray[np.int_]]:
     file_path = f'../data/oscilloscope_data/NewFile{file_index}.csv'
     df = pd.read_csv(file_path)
 
@@ -40,7 +43,7 @@ def show_basic_csv_plot(file_index: int) -> None:
     return None
 
 
-def averager(counts_array: np.array) -> np.array:
+def averager(counts_array: NDArray) -> NDArray[np.float_]:
     averaged_counts_array = copy(counts_array)
     last_true_value = counts_array[0]
 
@@ -53,8 +56,9 @@ def averager(counts_array: np.array) -> np.array:
     return averaged_counts_array
 
 
-def run_parabolic_interpolation(y: List[int] | np.array,
-                                position_indices: List[int] | np.array) -> Tuple[List[float], List[float]]:
+def run_parabolic_interpolation(y: Union[List[int], NDArray[np.int_]],
+                                position_indices: Union[List[int], NDArray[np.int_]]
+                                ) -> Tuple[List[float], List[float]]:
     """
     The function expects the y-data along with a sequence of positions (indices)
     that correspond to the local minima of each dip from one measurement.

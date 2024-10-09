@@ -44,7 +44,7 @@ diff_arrs = get_difference_array(hydrogen_dips)
 
 plt.figure(figsize=(12, 5))
 plt.title('Distance in ')
-plt.xlabel('Dip indices used for distance measurement')
+plt.xlabel('Dip indices between which the distance was measured')
 plt.ylabel('Distance in [resolution units]')
 
 for i, d_a in enumerate(diff_arrs):
