@@ -1,0 +1,386 @@
+file39:
+Lineare Regression für CH1:
+Steigung: -0.28745718050065877 ± 0.012187060615138412
+Achsenschnittpunkt: 165.42392621870883 ± 6.948427431491182
+Korrelationskoeffizient r: -0.9634602505800567
+x-Achsenabschnitt (Nullstelle): 575.4732789439912 ± 34.34444879026224
+
+Lineare Regression für CH2:
+Steigung: 0.047252196904891526 ± 0.0006262710034391811
+Achsenschnittpunkt: -28.165558991906302 ± 0.36166811555789335
+Korrelationskoeffizient r: 0.9223399073427611
+x-Achsenabschnitt (Nullstelle): 596.0687721800003 ± 10.999836550640614
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): 20.595493236009133 ± 36.06296669504264
+
+newfile38
+Lineare Regression für CH1:
+Steigung: -0.21509157509157512 ± 0.01585145851495688
+Achsenschnittpunkt: 38.86834350834351 ± 2.729244942038556
+Korrelationskoeffizient r: -0.9383246790234564
+x-Achsenabschnitt (Nullstelle): 180.70602482591582 ± 18.394480664199918
+
+Lineare Regression für CH2:
+Steigung: 0.0835889243287765 ± 0.0013679281012882174
+Achsenschnittpunkt: -16.331253005787694 ± 0.4740615968039469
+Korrelationskoeffizient r: 0.9283090373117837
+x-Achsenabschnitt (Nullstelle): 195.37580052535097 ± 6.51052743158832
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): 14.66977569943515 ± 19.5126596429879
+
+newfile40
+Lineare Regression für CH1:
+Steigung: -0.20240418118466896 ± 0.01443051887179995
+Achsenschnittpunkt: 209.76665505226478 ± 14.821126428371663
+Korrelationskoeffizient r: -0.9135414091735657
+x-Achsenabschnitt (Nullstelle): 1036.3751075916682 ± 104.02660362344719
+
+Lineare Regression für CH2:
+Steigung: 0.048603457791313275 ± 0.0010708696499242437
+Achsenschnittpunkt: -51.7400659651492 ± 0.9350866036715249
+Korrelationskoeffizient r: 0.8642426735745355
+x-Achsenabschnitt (Nullstelle): 1064.5346713253089 ± 30.335856414494195
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): 28.159563733640653 ± 108.3595793911669
+
+newfile41
+Lineare Regression für CH1:
+Steigung: -0.23169837914023964 ± 0.011860831897651164
+Achsenschnittpunkt: 22.12360817477097 ± 1.048694754495641
+Korrelationskoeffizient r: -0.9491319005306901
+x-Achsenabschnitt (Nullstelle): 95.48451852302452 ± 6.661654502692288
+
+Lineare Regression für CH2:
+Steigung: 0.051735755130904934 ± 0.0010716899076575297
+Achsenschnittpunkt: -2.9691405440335608 ± 0.4332729771734033
+Korrelationskoeffizient r: 0.8770783796611856
+x-Achsenabschnitt (Nullstelle): 57.39049399242094 ± 8.458688364140016
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -38.094024530603576 ± 10.76694244225714
+
+newfile42
+Lineare Regression für CH1:
+Steigung: -0.257377428307123 ± 0.016583363047980346
+Achsenschnittpunkt: 149.4728723404255 ± 9.538086721618981
+Korrelationskoeffizient r: -0.9179268795624127
+x-Achsenabschnitt (Nullstelle): 580.7536166771498 ± 52.664456904432086
+
+Lineare Regression für CH2:
+Steigung: 0.05034960440944751 ± 0.00048524441290790304
+Achsenschnittpunkt: -24.40125451013045 ± 0.3359770666035646
+Korrelationskoeffizient r: 0.9486146333271812
+x-Achsenabschnitt (Nullstelle): 484.6364692698925 ± 8.145101464372312
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -96.11714740725733 ± 53.290596721220005
+
+newfile43
+Lineare Regression für CH1:
+Steigung: -0.2576923076923077 ± 0.02269079412218863
+Achsenschnittpunkt: 102.27138461538463 ± 8.896296170247053
+Korrelationskoeffizient r: -0.9212267485302968
+x-Achsenabschnitt (Nullstelle): 396.8740298507463 ± 49.12306713701362
+
+Lineare Regression für CH2:
+Steigung: 0.08290528940136556 ± 0.0009691993179144115
+Achsenschnittpunkt: -27.446341048814347 ± 0.419815483886446
+Korrelationskoeffizient r: 0.9524400765439098
+x-Achsenabschnitt (Nullstelle): 331.05657367577163 ± 6.37341795142391
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -65.81745617497467 ± 49.53479768133792
+
+newfile44
+Lineare Regression für CH1:
+Steigung: -0.2610837438423645 ± 0.01647260435731258
+Achsenschnittpunkt: 47.840394088669946 ± 2.9024523203021846
+Korrelationskoeffizient r: -0.9502371524962594
+x-Achsenabschnitt (Nullstelle): 183.2377358490566 ± 16.038836541106406
+
+Lineare Regression für CH2:
+Steigung: 0.08157377674929027 ± 0.0017878849726201446
+Achsenschnittpunkt: -12.960310454787638 ± 0.5163759295962145
+Korrelationskoeffizient r: 0.8981330588392353
+x-Achsenabschnitt (Nullstelle): 158.87839169957763 ± 7.224734235804259
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -24.35934414947897 ± 17.590936938387685
+
+newfile45
+Lineare Regression für CH1:
+Steigung: -0.03740961740961741 ± 0.0018506743430636915
+Achsenschnittpunkt: 24.286109746109744 ± 1.102746738443795
+Korrelationskoeffizient r: -0.8884907418895966
+x-Achsenabschnitt (Nullstelle): 649.1942828548196 ± 43.5932083510252
+
+Lineare Regression für CH2:
+Steigung: 0.01675083107696602 ± 0.0003787321445612713
+Achsenschnittpunkt: -14.585456563974462 ± 0.26222932520878633
+Korrelationskoeffizient r: 0.7875190871696773
+x-Achsenabschnitt (Nullstelle): 870.7303235856068 ± 25.15248804622298
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): 221.53604073078725 ± 50.32907180995178
+
+
+newfile46
+Lineare Regression für CH1:
+Steigung: -0.03617287630402384 ± 0.0016378572369235762
+Achsenschnittpunkt: 27.22110283159463 ± 1.131568527814428
+Korrelationskoeffizient r: -0.8965930873558096
+x-Achsenabschnitt (Nullstelle): 752.5280158206988 ± 46.2555519421257
+
+Lineare Regression für CH2:
+Steigung: 0.017061435459330178 ± 0.000378189802844589
+Achsenschnittpunkt: -16.40333055786844 ± 0.26185381469445457
+Korrelationskoeffizient r: 0.7933924790372344
+x-Achsenabschnitt (Nullstelle): 961.4273427912627 ± 26.262617160618667
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): 208.89932697056395 ± 53.19117544852634
+
+newfile47
+Lineare Regression für CH1:
+Steigung: -0.041372124059146975 ± 0.0014341568072964788
+Achsenschnittpunkt: 22.04960230609086 ± 0.6976771203592561
+Korrelationskoeffizient r: -0.9304790847026044
+x-Achsenabschnitt (Nullstelle): 532.9579471087346 ± 25.013949255083084
+
+Lineare Regression für CH2:
+Steigung: 0.01692700481042001 ± 0.0003750701670698224
+Achsenschnittpunkt: -15.80607271718013 ± 0.2596938185181018
+Korrelationskoeffizient r: 0.7935020125071235
+x-Achsenabschnitt (Nullstelle): 933.7784737586976 ± 25.75817602865506
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): 400.82052664996297 ± 35.90517079278487
+
+
+newfile48
+Lineare Regression für CH1:
+Steigung: -0.041372124059146975 ± 0.0014341568072964788
+Achsenschnittpunkt: 22.04960230609086 ± 0.6976771203592561
+Korrelationskoeffizient r: -0.9304790847026044
+x-Achsenabschnitt (Nullstelle): 532.9579471087346 ± 25.013949255083084
+
+Lineare Regression für CH2:
+Steigung: 0.01692700481042001 ± 0.0003750701670698224
+Achsenschnittpunkt: -15.80607271718013 ± 0.2596938185181018
+Korrelationskoeffizient r: 0.7935020125071235
+x-Achsenabschnitt (Nullstelle): 933.7784737586976 ± 25.75817602865506
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): 400.82052664996297 ± 35.90517079278487
+
+newfile49
+Lineare Regression für CH1:
+Steigung: -0.04105381469900067 ± 0.001373103798239594
+Achsenschnittpunkt: 20.28897736764995 ± 0.6306411777284094
+Korrelationskoeffizient r: -0.930735806591107
+x-Achsenabschnitt (Nullstelle): 494.2044366986394 ± 22.565255531176096
+
+Lineare Regression für CH2:
+Steigung: 0.01622726126893143 ± 0.0003855189621991091
+Achsenschnittpunkt: -9.581576464057726 ± 0.26692843151661483
+Korrelationskoeffizient r: 0.7723969937579529
+x-Achsenabschnitt (Nullstelle): 590.4617116384592 ± 21.61859857755265
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): 96.25727493981975 ± 31.249872986056037
+
+newfile50
+Lineare Regression für CH1:
+Steigung: -0.03678640291366136 ± 0.0013559085491158455
+Achsenschnittpunkt: 14.797301802674935 ± 0.46393872802200936
+Korrelationskoeffizient r: -0.9213657849775813
+x-Achsenabschnitt (Nullstelle): 402.2492179353493 ± 19.46482666841347
+
+Lineare Regression für CH2:
+Steigung: 0.01640449750312327 ± 0.00038574272656541006
+Achsenschnittpunkt: -6.097829586455733 ± 0.26708336312097825
+Korrelationskoeffizient r: 0.7755878823055038
+x-Achsenabschnitt (Nullstelle): 371.71693831492007 ± 18.47903093890982
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -30.53227962042922 ± 26.83941246884079
+
+
+newfile51
+Lineare Regression für CH1:
+Steigung: -0.03428571428571429 ± 0.005563322177712403
+Achsenschnittpunkt: 15.865365853658536 ± 2.3375223511028356
+Korrelationskoeffizient r: -0.7024077456610337
+x-Achsenabschnitt (Nullstelle): 462.73983739837394 ± 101.42032930503159
+
+Lineare Regression für CH2:
+Steigung: 0.05105063267405047 ± 0.00037230608151656583
+Achsenschnittpunkt: -21.60152095475992 ± 0.25778000079795693
+Korrelationskoeffizient r: 0.9695874039891043
+x-Achsenabschnitt (Nullstelle): 423.13914291095915 ± 5.917787697179937
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -39.600694487414785 ± 101.59283147727473
+
+newfile52
+Lineare Regression für CH1:
+Steigung: -0.13230204081632654 ± 0.008072895446759374
+Achsenschnittpunkt: 103.31993469387756 ± 6.1041767076607645
+Korrelationskoeffizient r: -0.9225335209524389
+x-Achsenabschnitt (Nullstelle): 780.9398408095267 ± 66.32825677094382
+
+Lineare Regression für CH2:
+Steigung: 0.04522190640410167 ± 0.0003924955195131211
+Achsenschnittpunkt: -33.730532889258946 ± 0.2717589111656371
+Korrelationskoeffizient r: 0.9577181701770573
+x-Achsenabschnitt (Nullstelle): 745.8892287256505 ± 8.833107137554036
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -35.05061208387622 ± 66.91383584861775
+
+nefile53
+Lineare Regression für CH1:
+Steigung: -0.28723470522803113 ± 0.013245731158540944
+Achsenschnittpunkt: 59.515520949202816 ± 2.6185429164943774
+Korrelationskoeffizient r: -0.9714949690231891
+x-Achsenabschnitt (Nullstelle): 207.20170601235105 ± 13.206333563029766
+
+Lineare Regression für CH2:
+Steigung: 0.050908169650779427 ± 0.0006823036796390742
+Achsenschnittpunkt: -9.644166736716263 ± 0.31524103715721646
+Korrelationskoeffizient r: 0.9351411925869222
+x-Achsenabschnitt (Nullstelle): 189.4424176487478 ± 6.692669130168474
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -17.759288363603247 ± 14.805372885000786
+
+
+newfile54
+Lineare Regression für CH1:
+Steigung: -0.3077734877734878 ± 0.018156635601812895
+Achsenschnittpunkt: 176.64149292149293 ± 10.142234998067444
+Korrelationskoeffizient r: -0.9456173123409927
+x-Achsenabschnitt (Nullstelle): 573.9334281174207 ± 47.247487600849716
+
+Lineare Regression für CH2:
+Steigung: 0.04765002288286773 ± 0.0006724778282268523
+Achsenschnittpunkt: -26.470745732422998 ± 0.3107012527729669
+Korrelationskoeffizient r: 0.9288214791492584
+x-Achsenabschnitt (Nullstelle): 555.5243026324 ± 10.197198065049063
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -18.409125485020695 ± 48.33536937864743
+
+
+newfile55
+Steigung: -0.5517786561264821 ± 0.02440615256224894
+Achsenschnittpunkt: 41.76284584980236 ± 1.7646846627537103
+Korrelationskoeffizient r: -0.9800693546658661
+x-Achsenabschnitt (Nullstelle): 75.68767908309455 ± 4.629912877461272
+
+Lineare Regression für CH2:
+Steigung: 0.051335191982590365 ± 0.0006598930631837743
+Achsenschnittpunkt: -3.2207184909138 ± 0.3048867826140805
+Korrelationskoeffizient r: 0.9398781696795551
+x-Achsenabschnitt (Nullstelle): 62.73899768420196 ± 5.9936446027023385
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -12.948681398892589 ± 7.573629834919619
+
+newfile56
+Lineare Regression für CH1:
+Steigung: -0.480295566502463 ± 0.021848626052360362
+Achsenschnittpunkt: 41.952216748768464 ± 1.7791544268984802
+Korrelationskoeffizient r: -0.9731826239744243
+x-Achsenabschnitt (Nullstelle): 87.34666666666665 ± 5.432278403731343
+
+Lineare Regression für CH2:
+Steigung: 0.05110804449550282 ± 0.0006513845183254081
+Achsenschnittpunkt: -3.7765511315344575 ± 0.30095562617173366
+Korrelationskoeffizient r: 0.9408080583692428
+x-Achsenabschnitt (Nullstelle): 73.89347741267561 ± 5.963452226143258
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -13.453189253991042 ± 8.066747244654373
+
+newfile57
+Lineare Regression für CH1:
+Steigung: -0.44727272727272727 ± 0.019994525116664115
+Achsenschnittpunkt: 407.37160173160174 ± 18.135438428784912
+Korrelationskoeffizient r: -0.9815394866549827
+x-Achsenabschnitt (Nullstelle): 910.7901664730933 ± 57.461001505240745
+
+Lineare Regression für CH2:
+Steigung: 0.04974942929598327 ± 0.000649919986310914
+Achsenschnittpunkt: -44.722168722138626 ± 0.5408542986567968
+Korrelationskoeffizient r: 0.9381546678371581
+x-Achsenabschnitt (Nullstelle): 898.9483769967479 ± 16.003327484186933
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -11.841789476345411 ± 59.647910144039514
+
+
+newfile58
+uglyaf
+
+
+newfile59
+Lineare Regression für CH1:
+Steigung: -0.36261631089217294 ± 0.013324675801019297
+Achsenschnittpunkt: 233.65194307608098 ± 8.508486313602571
+Korrelationskoeffizient r: -0.9828956357631224
+x-Achsenabschnitt (Nullstelle): 644.3503396226415 ± 33.33435419838867
+
+Lineare Regression für CH2:
+Steigung: 0.050742292209551045 ± 0.0006580869044163466
+Achsenschnittpunkt: -31.881080694020266 ± 0.4231589200356548
+Korrelationskoeffizient r: 0.9388980573612499
+x-Achsenabschnitt (Nullstelle): 628.2940581864254 ± 11.659447937563987
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -16.056281436216068 ± 35.314613066440316
+
+newfile60
+Lineare Regression für CH1:
+Steigung: -0.3735632183908046 ± 0.01477741285270379
+Achsenschnittpunkt: 241.59080459770112 ± 9.480461855508553
+Korrelationskoeffizient r: -0.9802575671064909
+x-Achsenabschnitt (Nullstelle): 646.7199999999999 ± 36.03545238413457
+
+Lineare Regression für CH2:
+Steigung: 0.05121367928493374 ± 0.0006565565379611895
+Achsenschnittpunkt: -30.683263750735524 ± 0.42217487338151655
+Korrelationskoeffizient r: 0.9401733828834125
+x-Achsenabschnitt (Nullstelle): 599.1224254759228 ± 11.26707846887463
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -47.59757452407712 ± 37.755805987331385
+
+
+newfle61
+Lineare Regression für CH1:
+Steigung: -0.35677419354838713 ± 0.013554741875311532
+Achsenschnittpunkt: 193.241935483871 ± 7.252800271132322
+Korrelationskoeffizient r: -0.9797052379911791
+x-Achsenabschnitt (Nullstelle): 541.6365280289332 ± 28.926117900197397
+
+Lineare Regression für CH2:
+Steigung: 0.050870472826717236 ± 0.0003590222092946637
+Achsenschnittpunkt: -22.43851512628365 ± 0.24858241643937448
+Korrelationskoeffizient r: 0.9714363413561524
+x-Achsenabschnitt (Nullstelle): 441.09114540211067 ± 5.793928158698773
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): -100.54538262682252 ± 29.50067626825329
+
+newfile62
+Lineare Regression für CH1:
+Steigung: -0.3985769020251778 ± 0.012264257481601825
+Achsenschnittpunkt: 157.99999999999997 ± 4.802478716755089
+Korrelationskoeffizient r: -0.987914281167656
+x-Achsenabschnitt (Nullstelle): 396.41032683328757 ± 17.145296550844726
+
+Lineare Regression für CH2:
+Steigung: 0.050926986754851924 ± 0.0003611572167541203
+Achsenschnittpunkt: -22.132395226200394 ± 0.2500606684796326
+Korrelationskoeffizient r: 0.9711715728867362
+x-Achsenabschnitt (Nullstelle): 434.5907079234723 ± 5.797277051663809
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): 38.18038109018471 ± 18.09888435871548
+
+newfile63
+Lineare Regression für CH1:
+Steigung: -0.39799999999999996 ± 0.01533178219094266
+Achsenschnittpunkt: 183.30399999999997 ± 6.992166804987103
+Korrelationskoeffizient r: -0.9833593581272538
+x-Achsenabschnitt (Nullstelle): 460.56281407035175 ± 24.9683052726702
+
+Lineare Regression für CH2:
+Steigung: 0.04993663884488809 ± 0.00036509485232068386
+Achsenschnittpunkt: -26.83201498751041 ± 0.2527870373193682
+Korrelationskoeffizient r: 0.9694416532024941
+x-Achsenabschnitt (Nullstelle): 537.321205595261 ± 6.407657823769833
+
+Differenz der x-Achsenabschnitte (CH2 - CH1): 76.7583915249092 ± 25.777399926597898
+
+

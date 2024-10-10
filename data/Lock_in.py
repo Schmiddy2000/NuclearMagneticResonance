@@ -90,10 +90,10 @@ def compute_x_intercept_and_error(slope: float, intercept: float, slope_stderr: 
 
 
 # Beispielaufruf
-file_index = 42  # Passen Sie die Dateinummer entsprechend an
+file_index = 63 # Passen Sie die Dateinummer entsprechend an
 
 # Geben Sie unterschiedliche x_start und x_end für CH1 und CH2 an
-x_start_ch1, x_end_ch1 = (552, 598)  # Bereich für CH1
+x_start_ch1, x_end_ch1 = (444, 468)  # Bereich für CH1
 x_start_ch2, x_end_ch2 = (0, 1200)  # Bereich für CH2
 
 # Daten abrufen
@@ -124,8 +124,8 @@ else:
         plt.plot(x_plot, result_ch1['slope'] * x_plot + result_ch1['intercept'], '-', label='CH1 Fit')
 
         plt.xlabel('X')
-        plt.xlim(520, 620)
-        plt.ylim(-8, 11)
+        plt.xlim(390,  490)
+        plt.ylim(-10, 10)
         plt.ylabel('Signal')
         plt.title('Lineare Regression von CH1 und CH2 gegen X')
         plt.legend()
