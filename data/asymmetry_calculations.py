@@ -1,6 +1,4 @@
 # Imports
-from asyncore import file_dispatcher
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -15,6 +13,15 @@ file_indices = np.arange(14, 23, 1)
 hydrogen_dips = np.array([[128, 435, 740, 1048], [128, 435, 740, 1048], [128, 435, 740, 1048],
                           [49, 358, 662, 970], [41, 348, 653, 961], [28, 334, 641, 947],
                           [43, 350, 656, 963], [67, 371, 679, 984], [122, 431, 735, 1044]])
+
+# show_basic_csv_plot(21)
+
+for i, a in enumerate(hydrogen_dips):
+    print(f'{file_indices[i]}: {a[2] - a[0], a[3] - a[1]}')
+    print(f'\t{a[1] - a[0], a[3] - a[2]}')
+    print(f'\t{a[2] - a[1]}')
+
+exit()
 
 
 # Computes the differences between the datapoints array (measurement) wise

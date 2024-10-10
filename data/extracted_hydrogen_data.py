@@ -85,12 +85,15 @@ frequencies = [
     19.3826   # Measurement 9
 ]
 
-asymmetry_array.pop(7)
-frequencies.pop(7)
+# asymmetry_array.pop(7)
+# frequencies.pop(7)
 
 frequencies = np.array(frequencies)
+B_array = np.array([447, 447, 447, 448, 448, 448, 446, 446, 446])
 
-# B_array = np.array([447, 447, 447, 448, 448, 448, 446, 446, 446])
+
+frequencies = 2 * np.pi * frequencies / B_array
+
 # frequencies = frequencies / B_array
 frequencies = frequencies - min(frequencies)
 

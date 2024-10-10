@@ -38,6 +38,7 @@ def show_basic_csv_plot(file_index: int) -> None:
     plt.plot(x, ch_2, label='CH2', c='b')
 
     plt.legend()
+    plt.tight_layout()
     plt.show()
 
     return None
