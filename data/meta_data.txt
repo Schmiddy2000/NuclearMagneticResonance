@@ -291,37 +291,36 @@ NewFile54
 
 
 20)
-F = 18.5471(2)
+F = 18.5471(5)
 F_2 = 42(2)
 T = 30
 NewFile55
 
 21)
-F = 18.5471(2)
+F = 18.5471(5)
 F_2 = 51(2)
 T = 30
 NewFile56
 
 22)
-F = 18.5471(2)
+F = 18.5471(5)
 F_2 = 75(2)
 T = 30
 NewFile57
 
 
 23)
-F = 18.5471(2)
+F = 18.5471(5)
 F_2 = 22(2)
 T = 30
 NewFile58
 
 
 24)
-F = 18.5468(2) #realised now it decreased --> higher uncertainties for the ones before
+F = 18.5468(2)
 F_2 = 40(2)
 T = 30
 NewFile59
-
 
 # change F again
 
@@ -342,8 +341,6 @@ F = 18.5347(2)
 F_2 = 40(2)
 T = 30
 NewFile62
-
-
 
 27)
 F = 18.5248(2)

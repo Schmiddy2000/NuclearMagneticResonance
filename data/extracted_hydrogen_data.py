@@ -30,6 +30,7 @@ hydrogen_dips = np.array([[128, 435, 740, 1048], [128, 435, 740, 1048], [128, 43
                           [43, 350, 656, 963], [67, 371, 679, 984], [122, 431, 735, 1044]])
 
 
+
 # Computes the differences between the datapoints array (measurement) wise
 # The first entry is the difference between the last and can be thought of as a wrap around. Here
 # it still has to be determined if that is a sound approach.
