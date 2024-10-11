@@ -159,6 +159,9 @@ asymmetry = [3/2 * (fd[1] - fd[2]) + 1/2 * (fd[3] - fd[0]) for fd in fluorine_di
 asymmetry_fwhm_uncertainties = [np.sqrt(9/4 * (fd[1] ** 2 + fd[2] ** 2) + 1/4 * (fd[3] ** 2 + fd[0] ** 2)) for fd
                                 in fluorine_fwhm_uncertainties]
 
+asymmetry_fwhm_uncertainties = np.zeros(len(asymmetry_fwhm)) + 0.204
+
+
 asymmetry_fwhm = np.array(asymmetry_fwhm)
 asymmetry_fwhm_uncertainties = np.array(asymmetry_fwhm_uncertainties)
 

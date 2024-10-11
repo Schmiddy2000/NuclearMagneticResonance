@@ -39,6 +39,7 @@ def show_basic_csv_plot(file_index: int) -> None:
 
     plt.legend()
     plt.tight_layout()
+    plt.grid()
     plt.show()
 
     return None

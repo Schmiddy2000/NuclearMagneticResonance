@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.odr import ODR, Model, RealData
 
-from analysis.data_preparation_tools import get_gamma
 from data_preparation_tools import *
 
 from tools import show_basic_csv_plot
@@ -64,11 +63,11 @@ def odr_fit_with_plot(x, y, x_err, y_err):
     x_intercept_lower = find_x_intercept(slope_lower, intercept_lower)
 
     # Calculate the extended range for x-axis so that the lower line's intercept is included
-    x_min_extended = min(x_intercept_best, x_intercept_upper, x_intercept_lower)
-    x_max_extended = max(x_intercept_best, x_intercept_upper, x_intercept_lower)
+    old_x_min_extended = min(x_intercept_best, x_intercept_upper, x_intercept_lower)
+    old_x_max_extended = max(x_intercept_best, x_intercept_upper, x_intercept_lower)
 
-    x_min_extended = -1
-    x_max_extended = 3
+    x_min_extended = -0.75
+    x_max_extended = 1.75
 
     # Extend the x-axis range to cover the lower intercept as well
     x_fit_extended = np.linspace(x_min_extended, x_max_extended, 100)
@@ -88,6 +87,10 @@ def odr_fit_with_plot(x, y, x_err, y_err):
     # Plotting
     plt.figure(figsize=(12, 5))
 
+    plt.axvline(x_intercept_best + x_min, -10, 10, color='k', ls='--', lw=1, label='Best value')
+    plt.fill_betweenx([-10, 30], old_x_min_extended + x_min, old_x_max_extended + x_min, color='k', alpha=0.1,
+                      label=r'Best value 1-$\sigma$ confidence band')
+
     # Scatter plot of data points with x shifted back
     plt.errorbar(x_shifted + x_min, y, xerr=x_err, yerr=y_err, fmt='o', label='Data points', capsize=4, elinewidth=0.75)
 
@@ -102,14 +105,14 @@ def odr_fit_with_plot(x, y, x_err, y_err):
     # Labels and legend
     plt.xlabel(r'Gyromagnetic moment $\gamma$ in [rad$\cdot$T$^{-1}\cdot$MHz]', fontsize=13)
     plt.ylabel('Asymmetry $a$', fontsize=13)
-    plt.title('ODR Linear Fit of Teflon using FWHM', fontsize=16)
+    plt.title('ODR Linear Fit of Glycol using FWHM', fontsize=16)
     plt.legend(loc='upper left')
     plt.grid()
     plt.tight_layout()
-    plt.xlim(x_min_extended + x_min, x_max_extended + x_min)
-    plt.xlim(249.845, 250.9)
-    plt.ylim(-100, 200)
-    plt.savefig('gyromagnetic_moment_teflon.png', dpi=200)
+    # plt.xlim(x_min_extended + x_min, x_max_extended + x_min)
+    plt.xlim(271, 273.4)
+    plt.ylim(-7.5, 17.5)
+    plt.savefig('gyromagnetic_moment_glycol.png', dpi=200)
 
     # Show the plot
     plt.show()
@@ -117,42 +120,42 @@ def odr_fit_with_plot(x, y, x_err, y_err):
     return None
 
 
-# File indices range from 28 to 34
+# File indices range from 5 to 13
 
-file_index = 34
-teflon_indices = np.arange(28, 35)
+file_index = 22
+glycol_indices = np.arange(5, 14)
 
 # show_basic_csv_plot(file_index)
 
 #
-teflon_fwhm_left = np.array([[255, 548.75, 866.9], [232.55, 528.84, 837], [204.62, 507.5, 806.75],
-                             [172.64, 478.84, 784.88], [164.38, 472.75, 776.84], [156.88, 465, 770.8],
-                             [194.8, 512.9, 802.95]])
-teflon_fwhm_right = np.array([[276, 590.25, 892.2], [244, 560.15, 858.25], [220.34, 531.5, 830.25],
-                              [180.6, 486.15, 792.27], [174.15, 478.4, 784.2], [162.5, 468.4, 776],
-                              [238.27, 538.6, 848.34]])
+glycol_fwhm_left = np.array([[122.5, 432.7, 734.7], [122.5, 432.7, 734.7], [104.78, 414.26, 716.95],
+                             [87, 398.4, 700], [50.47, 356.68, 664.14], [38.95, 346.6, 652.25], [34.20, 340.45, 646.59],
+                             [24.70, 330.78, 638.35], [20.68, 328.41, 634.40]])
+glycol_fwhm_right = np.array([[126.63, 435.94, 740.07], [126.64, 435.93, 740.07], [108.74, 418.4, 720.87],
+                              [90.7, 402.46, 704.06], [54.26, 360.32, 666.49], [42.4, 350.33, 654.49],
+                              [36.33, 342.54, 648.86], [26.89, 334.00, 640.48], [22.60, 330.55, 636.46]])
 
-base_position_errors = np.array([[1, 1, 1] for _ in range(len(teflon_indices))])
+base_position_errors = np.array([[1, 1, 1] for _ in range(len(glycol_indices))])
 
-teflon_fwhm_dips = get_fwhm_positions(teflon_fwhm_left, teflon_fwhm_right)
-teflon_dip_errors = get_fwhm_position_errors(base_position_errors, base_position_errors)
+glycol_fwhm_dips = get_fwhm_positions(glycol_fwhm_left, glycol_fwhm_right)
+glycol_dip_errors = get_fwhm_position_errors(base_position_errors, base_position_errors)
 
-teflon_B = np.array([446, 446, 446, 447, 447, 447, 447]) * 1e-3
-teflon_frequencies = np.array([17.7727, 17.7766, 17.7813, 17.7961, 17.8023, 17.8126, 17.7777])
+glycol_B = np.array([448, 449, 448, 448, 448, 448, 448, 448, 448]) * 1e-3
+glycol_frequencies = np.array([19.4568, 19.4447, 19.4400, 19.4166, 19.4043, 19.3982, 19.3894, 19.3802,
+                               19.3749])
 
-teflon_B_uncertainties = np.ones(len(teflon_B)) * 1e-3 / np.sqrt(3)
-teflon_frequency_uncertainties = np.array([2, 1, 1, 3, 2, 1, 2]) * 1e-4 / np.sqrt(3)
+glycol_B_uncertainties = np.ones(len(glycol_B)) * 1e-3 / np.sqrt(3)
+glycol_frequency_uncertainties = np.ones(len(glycol_indices)) * 1e-4 / np.sqrt(3)
 
-teflon_fwhm_asymmetries = get_asymmetry(teflon_fwhm_dips)
-teflon_fwhm_asymmetries *= -1
-teflon_fwhm_asymmetry_uncertainties = get_asymmetry_errors(teflon_dip_errors)
+glycol_fwhm_asymmetries = get_asymmetry(glycol_fwhm_dips)
+# glycol_fwhm_asymmetries *= -1
+glycol_fwhm_asymmetry_uncertainties = get_asymmetry_errors(glycol_dip_errors)
 
-gamma = get_gamma(teflon_frequencies, teflon_B)
+gamma = get_gamma(glycol_frequencies, glycol_B)
 
-gamma_uncertainties = get_gamma_uncertainties(teflon_frequencies, teflon_B, teflon_frequency_uncertainties,
-                                              teflon_B_uncertainties)
+gamma_uncertainties = get_gamma_uncertainties(glycol_frequencies, glycol_B, glycol_frequency_uncertainties,
+                                              glycol_B_uncertainties)
 
 print(gamma_uncertainties)
 
-odr_fit_with_plot(gamma, teflon_fwhm_asymmetries, gamma_uncertainties, teflon_fwhm_asymmetry_uncertainties)
-
+odr_fit_with_plot(gamma, glycol_fwhm_asymmetries, gamma_uncertainties, glycol_fwhm_asymmetry_uncertainties)
