@@ -67,6 +67,18 @@ def odr_fit_with_plot(x, y, x_err, y_err):
     # Extend the x-axis range to cover the lower intercept as well
     x_fit_extended = np.linspace(x_min_extended, x_max_extended, 100)
 
+    return_dict = {
+        'parameters': popt,
+        'uncertainties': perr,
+        'x_intercept_best': x_intercept_best + x_min,  # Shifted back to original x
+        'x_intercept_upper': x_intercept_upper + x_min,  # Shifted back to original x
+        'x_intercept_lower': x_intercept_lower + x_min,  # Shifted back to original x
+        'delta_min': x_intercept_best - x_intercept_upper,
+        'delta_max':  x_intercept_lower - x_intercept_best
+    }
+
+    print(return_dict)
+
     # Plotting
     plt.figure(figsize=(12, 5))
 
@@ -93,20 +105,6 @@ def odr_fit_with_plot(x, y, x_err, y_err):
 
     # Show the plot
     plt.show()
-
-    # Return the best fit parameters, uncertainties, and intercepts
-    return {
-        'parameters': popt,
-        'uncertainties': perr,
-        'x_intercept_best': x_intercept_best + x_min,  # Shifted back to original x
-        'x_intercept_upper': x_intercept_upper + x_min,  # Shifted back to original x
-        'x_intercept_lower': x_intercept_lower + x_min  # Shifted back to original x
-    }
-
-
-
-def lin_func(x, a, b):
-    return a * x + b
 
 
 # File indices range from 23 to 27
@@ -136,10 +134,21 @@ fluorine_fwhm_right = np.array([[240.5, 550.43, 852.53, 1164.24], [276.4, 580.3,
 fluorine_fwhm_left_uncertainties = np.array([[1, 1, 1, 1], [1, 3, 1, 1], [1, 1, 3, 1], [1, 1, 3, 1], [1, 1, 1, 1]])
 fluorine_fwhm_right_uncertainties = np.array([[1, 1, 1, 1], [1, 3, 1, 1], [1, 1, 3, 1], [1, 1, 3, 1], [1, 1, 1, 1]])
 
-fluorine_fwhm_uncertainties = np.array([np.sqrt(u_l ** 2 + u_r ** 2) for u_l, u_r
+fluorine_fwhm_uncertainties = np.array([np.sqrt(u_l ** 2 + u_r ** 2) / np.sqrt(3) for u_l, u_r
                                         in zip(fluorine_fwhm_left_uncertainties, fluorine_fwhm_right_uncertainties)])
 
-fluorine_gamma_uncertainties = np.array([0.05 for _ in range(len(fluorine_fwhm_uncertainties))])
+frequency_uncertainties = np.array([3, 3, 3, 2, 2]) * 1e-4
+B_uncertainties = np.array([1, 1, 1, 1, 1]) * 1e-3 / np.sqrt(3)
+
+
+# Still need to calculate the real uncertainties here
+def get_gamma_uncertainties(frequencies, B, delta_frequencies, delta_B):
+    root_term = delta_frequencies ** 2 + (frequencies * delta_B / B) ** 2
+
+    return 2 * np.pi / B * np.sqrt(root_term)
+
+
+# fluorine_gamma_uncertainties = np.array([0.05 for _ in range(len(fluorine_fwhm_uncertainties))])
 
 fluorine_fwhm_dips = (fluorine_fwhm_left + fluorine_fwhm_right) / 2
 
@@ -160,22 +169,10 @@ B_array = np.array([446, 446, 446, 447, 447]) * 1e-3
 
 gamma = 2 * np.pi * fluorine_frequencies / B_array
 
-# gamma = gamma - min(gamma)
+gamma_uncertainties = get_gamma_uncertainties(fluorine_frequencies, B_array, frequency_uncertainties, B_uncertainties)
+# print(gamma_uncertainties)
 
-print(gamma, len(gamma), type(gamma))
-print(asymmetry_fwhm, len(asymmetry_fwhm), type(asymmetry_fwhm))
-print(asymmetry_fwhm_uncertainties, len(asymmetry_fwhm_uncertainties), type(asymmetry_fwhm_uncertainties))
-print(fluorine_gamma_uncertainties, len(fluorine_gamma_uncertainties), type(fluorine_gamma_uncertainties))
+# odr_fit_with_plot(gamma, asymmetry_fwhm, fluorine_gamma_uncertainties, asymmetry_fwhm_uncertainties)
+results = odr_fit_with_plot(gamma, asymmetry_fwhm, gamma_uncertainties, asymmetry_fwhm_uncertainties)
 
-odr_fit_with_plot(gamma, asymmetry_fwhm, fluorine_gamma_uncertainties, asymmetry_fwhm_uncertainties)
-
-#
-# print(asymmetry_fwhm)
-# print(asymmetry)
-#
-# plt.figure(figsize=(12, 5))
-# plt.scatter(gamma, asymmetry)
-# plt.show()
-#
-# print(asymmetry)
-
+print(results)
